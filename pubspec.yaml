@@ -2,6 +2,7 @@ name: feathers_socket_client
 description: Simple client for feathers using sockets
 version: 0.0.1
 author: Carlos Henry Céspedes <chenryhabana205@gmail.com>
+homepage: https://featherflutterapi.qvaweb.com/
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
