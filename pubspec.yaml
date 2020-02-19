@@ -1,9 +1,11 @@
 name: feathers_socket_client
 description: Simple client for feathersjs using sockets. This library is developed to facilitate connection. (Developing)
-version: 0.0.2
-author: Carlos Henry Céspedes <chenryhabana205@gmail.com>
+version: 0.0.3
+authors:
+  - Carlos Henry Céspedes <chenryhabana205@gmail.com>
+  - Marcos rodriguez Toranzo <marcos930807@gmail.com>
 homepage: https://featherflutterapi.qvaweb.com/
-
+repository: https://github.com/chenryhabana205/feathers_socket_client.git
 environment:
   sdk: ">=2.3.0 <3.0.0"
 

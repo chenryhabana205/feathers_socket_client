@@ -51,7 +51,7 @@ class Remove<T> extends FeathersEvent<T> {
 class Update<T> extends FeathersEvent<T> {
   final Map<String, dynamic> itemToUpdate;
   final String id;
-  Update(this. id, this.itemToUpdate);
+  Update(this.id, this.itemToUpdate);
 
   @override
   List<Object> get props => [itemToUpdate];

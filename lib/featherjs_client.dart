@@ -6,7 +6,6 @@
  * @ Description:
  */
 
-
 import 'dart:async';
 import 'package:event_bus/event_bus.dart';
 import 'package:feathers_socket_client/featherjs_events.dart';
