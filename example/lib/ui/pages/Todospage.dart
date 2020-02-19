@@ -1,8 +1,8 @@
 /**
  * @ Author: Carlos Henry Céspedes <chenryhabana205@gmail.com>
  * @ Create Time: 2020-02-18 18:43:20
- * @ Modified by: Marcos Rodriguez Toranzo
- * @ Modified time: 2020-02-18 18:55:50
+ * @ Modified by: Carlos Henry Céspedes <chenryhabana205@gmail.com>
+ * @ Modified time: 2020-02-18 20:17:25
  * @ Description:
  */
 
@@ -57,7 +57,7 @@ class _TodoPageState extends State<TodoPage> {
               // ),
               Positioned(
                 child: Text(
-                  "Tareas",
+                  "Todos",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 40,
