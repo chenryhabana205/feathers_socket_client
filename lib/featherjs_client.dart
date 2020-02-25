@@ -2,7 +2,7 @@
  * @ Author: Carlos Henry Céspedes <chenryhabana205@gmail.com>
  * @ Create Time: 2020-02-18 18:13:47
  * @ Modified by: Carlos Henry Céspedes <chenryhabana205@gmail.com>
- * @ Modified time: 2020-02-18 19:39:08
+ * @ Modified time: 2020-02-25 18:05:53
  * @ Description:
  */
 
@@ -144,6 +144,17 @@ class FeatherClient {
       {String id, Map<String, dynamic> query}) {
     Completer c = Completer<bool>();
     _socket.emitWithAck("update", [collection, id, if (query != null) query],
+        ack: (response) {
+      if (debug) print(response);
+      c.complete(true); // a is an array with the results
+    });
+    return c.future;
+  }
+
+  Future<bool> patch<T>(String collection,
+      {String id, Map<String, dynamic> query}) {
+    Completer c = Completer<bool>();
+    _socket.emitWithAck("patch", [collection, id, if (query != null) query],
         ack: (response) {
       if (debug) print(response);
       c.complete(true); // a is an array with the results
